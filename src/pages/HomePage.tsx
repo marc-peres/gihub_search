@@ -23,7 +23,7 @@ export function HomePage() {
         fetchRepos(useName);
         setDropdown(false);
     };
-    console.log('reposData', reposData);
+
     return (
         <div className={"flex flex-row justify-center align-middle pt-10 mx-auto h-screen w-screen"}>
             {isError && <p className={"text-center text-red-600"}>Something went wrong...</p>}
