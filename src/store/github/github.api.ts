@@ -23,6 +23,9 @@ export const githubApi = createApi({
             query: (userName: string) => ({
                 url: `users/${userName}/repos`,
             })
+        }),
+        createUser: build.mutation<any, void>({
+            query: () => ''
         })
     }),
 });
